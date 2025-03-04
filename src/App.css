@@ -44,18 +44,16 @@ body,
   overflow-y: auto;
 }
 
-h1 {
+.title {
   color: var(--text-color);
-  font-size: 16px;
+  font-size: 18px;
+  flex: 1;
+  text-align: center;
+  padding-top: 0.2rem;
+  font-weight: 700;
 }
 #imageInput {
   display: none;
-}
-
-h1 {
-  flex: 1;
-  text-align: center;
-  padding-top: 0.5rem;
 }
 
 .toggle-theme {
@@ -111,6 +109,18 @@ h1 {
   align-items: center;
   position: relative;
   z-index: 1;
+  padding: 5rem;
+}
+
+h1 {
+  font-size: 3rem;
+  color: var(--text-color);
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+.infotext {
+  font-size: 2rem;
 }
 
 .popout-container {

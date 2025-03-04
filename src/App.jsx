@@ -1,8 +1,8 @@
 import logo from "./assets/logo.png";
-import { CustomSlider } from "./Components/Slider.jsx";
-import { CustomFileInput } from "./Components/FileInput.jsx";
-import scanImage from "./utils/ocr.js";
+import { CustomSlider } from "./Components/CustomSlider.jsx";
+import Steps from "./Components/Steps.jsx";
 import { Section } from "./Components/Section.jsx";
+import Header from "./Components/Header.jsx";
 
 import "./App.css";
 
@@ -16,22 +16,15 @@ function App() {
         <div className="logo-container">
           <img src={logo} className="logo" alt="koi fish logo" />
         </div>
-        <h1>iDopamine</h1>
+        <p className="title">iDopamine</p>
         <CustomSlider toggle="theme" />
       </div>
       <div className="header-content">
-        <div className="container"></div>
+        <div className="container">
+          <Header />
+        </div>
         <div className="popout-container">
-          <div className="steps step-one">
-            <div className="info-img"></div>
-            <CustomFileInput />
-          </div>
-          <div className="steps step-two">
-            <div className="info-img"></div>
-            <button className="button" onClick={scanImage}>
-              Extract Text
-            </button>
-          </div>
+          <Steps />
         </div>
       </div>
       <div className="sections">
