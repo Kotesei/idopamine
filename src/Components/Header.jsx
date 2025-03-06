@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <>
+    <div className="container">
       <h1>How much time are you spending on your iPhone?</h1>
       <p className="infotext">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cum
@@ -16,6 +16,6 @@ export default function Header() {
         voluptatum ad officia incidunt perferendis, deserunt quisquam ut.
         Maiores, labore at.
       </p>
-    </>
+    </div>
   );
 }

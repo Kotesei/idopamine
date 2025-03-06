@@ -29,7 +29,6 @@ export function updateStatus() {
       allCategories.push(category);
     });
   });
-  console.log(dates);
 
   const combinedValues = {};
 
@@ -64,5 +63,5 @@ export function updateStatus() {
   });
 
   //   results["Time Per Category"] = combinedValues;
-  console.log(results);
+  return results;
 }

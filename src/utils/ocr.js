@@ -69,7 +69,6 @@ export default async function runOCR() {
       });
       const index = dates.findIndex((entry) => entry.Date === date);
       if (index !== -1) {
-        console.log(screenUsage);
         dates[index] = screenUsage;
       } else {
         storeData(screenUsage);
@@ -78,5 +77,6 @@ export default async function runOCR() {
       console.error("OCR Error:", error);
     }
   }
-  updateStatus();
+  const results = updateStatus();
+  return { dates, results };
 }
